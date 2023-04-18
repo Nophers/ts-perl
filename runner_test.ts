@@ -1,5 +1,5 @@
-import { Perl } from "../perl";
-import { PerlThrottler } from "../runner";
+import { Perl } from "./perl";
+import { PerlThrottler } from "./runner";
 
 const runner = new PerlThrottler({
   timeout: 2000,

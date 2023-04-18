@@ -1,4 +1,4 @@
-import { runPerl } from "./utils/execute";
+import { runPerl } from "./execute";
 
 export class Perl {
   static run(script: string) {
@@ -7,8 +7,8 @@ export class Perl {
 
   static validateEmail(email: string) {
     const validateEmailScript = `
-      use lib('..');
-      require('../../string_utils.pm');
+      use lib('.');
+      require('./string_utils.pm');
       print StringUtils::validate_email('${email}');
     `;
     const emailIsValid = runPerl(validateEmailScript) === "1";
@@ -17,8 +17,8 @@ export class Perl {
 
   static titleCase(string: string) {
     const titleCaseScript = `
-    use lib('..');
-    require('../../string_utils.pm');
+    use lib('.');
+    require('./string_utils.pm');
     print StringUtils::title_case('${string}');
   `;
     const titleCasedString = runPerl(titleCaseScript);
@@ -27,9 +27,9 @@ export class Perl {
 
   static extractDates(string: string) {
     const extractdatesScript = `
-    use lib('..');
+    use lib('.');
     use JSON;
-    require('../../string_utils.pm');
+    require('./string_utils.pm');
     print StringUtils::extract_dates('${string}');
   `;
     const datesJSON = runPerl(extractdatesScript);
@@ -39,8 +39,8 @@ export class Perl {
 
   static removeNonAscii(string: string) {
     const removenonasciiScript = `
-    use lib('..');
-    require('../../string_utils.pm');
+    use lib('.');
+    require('./string_utils.pm');
     print StringUtils::remove_non_ascii('${string}');
   `;
     const asciiString = runPerl(removenonasciiScript);
@@ -49,8 +49,8 @@ export class Perl {
 
   static removeConsecutiveDuplicates(string: string) {
     const remove_consecutive_duplicatesScript = `
-    use lib('..');
-    require('../../string_utils.pm');
+    use lib('.');
+    require('./string_utils.pm');
     print StringUtils::remove_consecutive_duplicates('${string}');
   `;
     const dedupedString = runPerl(remove_consecutive_duplicatesScript);
@@ -60,8 +60,8 @@ export class Perl {
   static splitIntoChunks(string: string, chunkSize: number) {
     const split_into_chunksScript = `
     use JSON;
-    use lib('..');
-    require('../../string_utils.pm');
+    use lib('.');
+    require('./string_utils.pm');
     print encode_json(StringUtils::split_into_chunks('${string}', ${chunkSize}));
   `;
     const chunksJSON = runPerl(split_into_chunksScript);
@@ -71,8 +71,8 @@ export class Perl {
 
   static truncateString(string: string, maxLength: number, suffix: string) {
     const truncate_stringScript = `
-    use lib('..');
-    require('../../string_utils.pm');
+    use lib('.');
+    require('./string_utils.pm');
     print StringUtils::truncate_string('${string}', ${maxLength}, '${suffix}');
   `;
     const truncatedString = runPerl(truncate_stringScript);
@@ -85,8 +85,8 @@ export class Perl {
     endDelim: string
   ) {
     const extract_between_delimitersScript = `
-    use lib('..');
-    require('../../string_utils.pm');
+    use lib('.');
+    require('./string_utils.pm');
     print StringUtils::extract_between_delimiters('${str}', '${startDelim}', '${endDelim}');
   `;
     const extractedString = runPerl(extract_between_delimitersScript);
@@ -95,8 +95,8 @@ export class Perl {
 
   static anagram(str1: string, str2: string) {
     const anagramScript = `
-    use lib('..');
-    require('../../string_utils.pm');
+    use lib('.');
+    require('./string_utils.pm');
     print StringUtils::anagram('${str1}', '${str2}');
   `;
     const isAnagram = runPerl(anagramScript);
@@ -105,8 +105,8 @@ export class Perl {
 
   static longestSubstring(str1: string, str2: string) {
     const longestSubstringScript = `
-    use lib('..');
-    require('../../string_utils.pm');
+    use lib('.');
+    require('./string_utils.pm');
     print StringUtils::longest_substring('${str1}', '${str2}');
   `;
     const longestSubstring = runPerl(longestSubstringScript);
