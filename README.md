@@ -1,7 +1,7 @@
 # ts-perl
 
 <p align="center">
-A powerful NodeJS library for manipulating strings in pure Perl. 
+A powerful NodeJS library to manipulate strings in pure Perl. 
 </p>
 
 [![Discord](https://img.shields.io/discord/823720615965622323.svg?style=for-the-badge)](https://discord.gg/UDNcTrBagN)
@@ -11,8 +11,8 @@ A powerful NodeJS library for manipulating strings in pure Perl.
 ---
 
 > ### 🙄 Why?
->
-> Perl has by far the most powerful RegEx engine and is mainly used for such purpose.
+
+Perl has by far the most powerful RegEx engine and is mainly used for such purpose.
 
 _"Like any other programming language that is mainly used for text processing, Perl also has its own powerful repertoire of regular expressions. In fact, it is a trendsetter in this regard. The regular expression style used in Perl is so well known that it is often called Perl-style regular expressions."_
 
