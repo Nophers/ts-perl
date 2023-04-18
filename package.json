@@ -1,5 +1,5 @@
 {
-  "name": "tserl",
+  "name": "ts-perl",
   "version": "1.0.0",
   "description": "Run your favorite Perl RegEx in NodeJS",
   "main": "dist/perl.js",
