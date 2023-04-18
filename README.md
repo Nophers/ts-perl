@@ -24,13 +24,8 @@ But who want's to write pure Perl code nowadays? Sure, almost nobody. Luckily yo
 - [https://www.somacon.com/p127.php](https://www.somacon.com/p127.php)
 - [https://www.oreilly.com/library/view/mastering-perl/9780596527242/ch02.html](https://www.oreilly.com/library/view/mastering-perl/9780596527242/ch02.html)
 
-> ### 📦 Installation
 
 ⚠️ Warning - this requires Perl to be installed on your system. If you don't have it, you can install it from [here](https://www.perl.org/get.html). Remember, that on UNIX systems Perl is already installed by default. On Windows, you can install it using [Strawberry Perl](https://strawberryperl.com/).
-
-```bash
-$ npm i ts-perl@latest
-```
 
 ---
 
