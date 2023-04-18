@@ -1,8 +1,9 @@
 {
   "name": "ts-perl",
-  "version": "1.0.0",
+  "version": "1.1.2",
   "description": "Run your favorite Perl RegEx in NodeJS",
   "main": "dist/perl.js",
+  "types": "index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "node tests/runner_test.js"

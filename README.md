@@ -26,6 +26,8 @@ But who want's to write pure Perl code nowadays? Sure, almost nobody. Luckily yo
 
 > ### 📦 Installation
 
+⚠️ Warning - this requires Perl to be installed on your system. If you don't have it, you can install it from [here](https://www.perl.org/get.html). Remember, that on UNIX systems Perl is already installed by default. On Windows, you can install it using [Strawberry Perl](https://strawberryperl.com/).
+
 ```bash
 $ npm i ts-perl
 $ npm i --save-dev @types/ts-perl
